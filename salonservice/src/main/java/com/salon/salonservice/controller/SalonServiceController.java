@@ -21,7 +21,7 @@ public class SalonServiceController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @GetMapping("/getAll")
+    @GetMapping()//("/getAll")
     @ResponseStatus(HttpStatus.OK)
     public List<ServiceResponse> getAllSalonServices(){
         return salonServiceService.getAllSalonServices();

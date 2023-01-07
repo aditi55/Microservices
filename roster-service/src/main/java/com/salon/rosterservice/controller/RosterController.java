@@ -26,7 +26,7 @@ public class RosterController {
     }
 
     //Displays available slots for stylist
-	@GetMapping
+	@GetMapping()
     @ResponseStatus(HttpStatus.OK)
 	public List<RosterResponse> isAvailable (@RequestParam List<String> stylistName) {
         return rosterService.isAvailable(stylistName);
