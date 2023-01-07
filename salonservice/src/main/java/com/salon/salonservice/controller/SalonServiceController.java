@@ -15,13 +15,13 @@ import java.util.List;
 public class SalonServiceController {
     private final SalonServiceService salonServiceService;
 
-    @PostMapping("/add")
+    @PostMapping()
     public ResponseEntity addService(@RequestBody ServiceRequest serviceRequest){
         salonServiceService.addService(serviceRequest);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @GetMapping()//("/getAll")
+    @GetMapping()
     @ResponseStatus(HttpStatus.OK)
     public List<ServiceResponse> getAllSalonServices(){
         return salonServiceService.getAllSalonServices();
