@@ -5,7 +5,9 @@
 - Eureka - Service Registration and Discovery
 - Swagger - API documentation
 - Docker - Containerization
+- Oauth2 KeyCloack - Authorization & IAM
 - Kubernetes - Container orchestration
+- PostgreSQL, MongoDB - Database
   
 
 ## Build Tools
