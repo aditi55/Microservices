@@ -8,6 +8,8 @@
 - Oauth2 KeyCloack - Authorization & IAM
 - Kubernetes - Container orchestration
 - PostgreSQL, MongoDB - Database
+- Resilienc4J - Circuitbreaker and Resiliency
+- Sleuth & Zipkin - Distributed Tracing
   
 
 ## Build Tools
