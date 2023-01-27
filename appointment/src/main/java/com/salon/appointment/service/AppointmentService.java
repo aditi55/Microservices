@@ -6,6 +6,7 @@ import com.salon.appointment.dto.AppointmentRequest;
 import com.salon.appointment.dto.AppointmentItemsDto;
 import com.salon.appointment.dto.RosterResponse;
 import com.salon.appointment.enums.StatusEnum;
+import com.salon.appointment.event.AppointmentBookedEvent;
 import com.salon.appointment.exception.StylistNotFoundException;
 import com.salon.appointment.model.Appointment;
 import com.salon.appointment.model.AppointmentItems;
@@ -13,6 +14,7 @@ import com.salon.appointment.repository.AppointmentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -32,6 +34,7 @@ public class AppointmentService {
     private final AppointmentRepository appointmentRepository;
     private final WebClient.Builder webClientBuilder;
     private final Tracer tracer;
+    private final KafkaTemplate<String, AppointmentBookedEvent> kafkaTemplate;
 
     public String bookAppointment(AppointmentRequest appointmentRequest) {
         Appointment appointment = new Appointment();
@@ -61,6 +64,7 @@ public class AppointmentService {
             boolean allStylistsAvailable = Arrays.stream(rosterResponseArray).allMatch(RosterResponse::isAvailable);
             if (allStylistsAvailable) {
                 appointmentRepository.save(appointment);
+                kafkaTemplate.send("notificationTopic",  new AppointmentBookedEvent(appointment.getAppointmentNumber()));
                 return "Appointment Booked Successfully";
             } else {
                 throw new StylistNotFoundException("Stylist is not available at the moment, please select a different stylist.");
