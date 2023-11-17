@@ -6,7 +6,6 @@
 - Swagger - API documentation
 - Docker - Containerization
 - Oauth2 KeyCloack - Authorization & IAM
-- Kubernetes - Container orchestration
 - PostgreSQL, MongoDB - Database
 - Resilienc4J - Circuitbreaker and Resiliency
 - Sleuth & Zipkin - Distributed Tracing
@@ -55,8 +54,14 @@ List of microservices :
 
    ![Screenshot 2023-10-29 133942](https://github.com/aditi55/Microservices/assets/67974030/19445ef9-a255-481f-a1aa-2a9d6cba3871)
 
+4. ### Containerization of services -
+   docker compose up -d
+   
+   ![Screenshot 2023-11-17 160905](https://github.com/aditi55/Microservices/assets/67974030/de076e0f-f1d6-4f91-868f-4602c0976435)
 
-4. ### Containerization of services and service discovery and registration using Eureka Server
+
+
+6. ###  Service discovery and registration using Eureka Server
 
    ![Screenshot 2023-10-29 134244](https://github.com/aditi55/Microservices/assets/67974030/449cddd5-4daa-4e88-93af-9650712fe58d)
 
