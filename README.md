@@ -34,6 +34,9 @@ List of microservices :
 | Roster Service         |   Java        |
 | Appointment Service    |   Java        |
 
+## Solution Architecture
+![Screenshot 2023-11-17 104750](https://github.com/aditi55/Microservices/assets/67974030/4f6ab687-fc7d-452d-83f4-67c8adac21be)
+
 ## Output
 
 1. ### Implementation of Oauth2
