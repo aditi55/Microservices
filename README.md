@@ -54,8 +54,12 @@ List of microservices :
 
    ![Screenshot 2023-10-29 133942](https://github.com/aditi55/Microservices/assets/67974030/19445ef9-a255-481f-a1aa-2a9d6cba3871)
 
-4. ### Containerization of services -
+4. ### Containerization of services
+   
+   
+   ```
    docker compose up -d
+   ```
    
    ![Screenshot 2023-11-17 160905](https://github.com/aditi55/Microservices/assets/67974030/de076e0f-f1d6-4f91-868f-4602c0976435)
 
