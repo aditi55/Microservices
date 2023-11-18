@@ -14,7 +14,7 @@
   
 
 ## Build Tools
-- Java - Programming
+- Java 17 - Programming
 - Maven - Build
 - Git - Version control
 - Docker - Deployment
@@ -55,8 +55,15 @@ List of microservices :
    ![Screenshot 2023-10-29 133942](https://github.com/aditi55/Microservices/assets/67974030/19445ef9-a255-481f-a1aa-2a9d6cba3871)
 
 4. ### Containerization of services
-   
-   
+
+    #### 1. Add Jib Plugin to pom.xml
+    #### 2. Build and Push the Image:
+    Run the following Maven command to build and push the container image  to the specified Docker registry :
+
+```
+mvn clean compile jib:build
+```  
+
    ```
    docker compose up -d
    ```
