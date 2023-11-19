@@ -11,6 +11,7 @@
 - Sleuth & Zipkin - Distributed Tracing
 - Kafka - Event-Driven Microservices Architecture
 - Prometheus and Grafana - Monitoring
+- AWS - Cloud
   
 
 ## Build Tools
@@ -36,6 +37,9 @@ List of microservices :
 ## Solution Architecture
 ![Screenshot 2023-11-17 104750](https://github.com/aditi55/Microservices/assets/67974030/4f6ab687-fc7d-452d-83f4-67c8adac21be)
 
+## AWS Architecture
+![Screenshot 2023-11-19 194433](https://github.com/aditi55/Microservices/assets/67974030/4e684ca1-58fa-445c-9f53-282bdea08107)
+
 ## Output
 
 1. ### Implementation of Oauth2
@@ -58,8 +62,8 @@ List of microservices :
 
     #### 1. Add Jib Plugin to pom.xml
     #### 2. Build and Push the Image:
-    Run the following Maven command to build and push the container image  to the specified Docker registry :
-
+    Run the following Maven command to build and push the container image to the specified Docker registry :
+    
 ```
 mvn clean compile jib:build
 ```  
