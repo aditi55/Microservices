@@ -38,7 +38,7 @@ List of microservices :
 ![Screenshot 2023-11-17 104750](https://github.com/aditi55/Microservices/assets/67974030/4f6ab687-fc7d-452d-83f4-67c8adac21be)
 
 ## AWS Architecture
-![Screenshot 2023-11-19 194433](https://github.com/aditi55/Microservices/assets/67974030/4e684ca1-58fa-445c-9f53-282bdea08107)
+![Screenshot 2023-11-19 232730](https://github.com/aditi55/Microservices/assets/67974030/853ad04d-5919-4ce7-96d4-05c78792c5e1)
 
 ## Output
 
